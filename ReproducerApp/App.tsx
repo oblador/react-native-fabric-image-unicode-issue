@@ -8,6 +8,7 @@
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  Image,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -72,6 +73,7 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <Image source={require('./rn__.jpg')} style={{borderWidth: 3}} />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
